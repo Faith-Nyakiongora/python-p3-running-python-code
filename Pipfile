@@ -11,4 +11,7 @@ pytest = "7.1.3"
 [dev-packages]
 
 [requires]
-python_full_version = "3.8.13"
+python_full_version = "3.10.12"
+
+def test_app_py_exists():
+    assert(path.exists("lib/app.py"))
